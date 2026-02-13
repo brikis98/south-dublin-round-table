@@ -1,0 +1,25 @@
+# Website settings
+url: "https://www.southdublinroundtable.ie"
+
+# ID to use for Google Analytics
+google_analytics_id: "XXX" # TODO
+google_analytics_domain_name: "southdublinroundtable.ie"
+
+# Contact details
+facebook_url: "https://www.facebook.com/southdublinroundtable/"
+instagram_url: "https://www.instagram.com/southdublinroundtable/"
+email: "southdublin@roundtable.org.uk"
+
+# Jekyll build settings
+paginate: 10
+paginate_path: "/blog/page:num"
+permalink: "/blog/:year/:month/:day/:title/"
+highlighter: rouge
+timezone: 'Europe/Dublin'
+repository: brikis98/round-table
+
+# Plugins (GitHub Pages only support a few)
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-paginate
