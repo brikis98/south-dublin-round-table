@@ -20,7 +20,8 @@ documentation for more info.
    [available on GitHub Pages](https://help.github.com/articles/repository-metadata-on-github-pages/).
 1. Free SSL and CDN provided by [CloudFlare](https://www.cloudflare.com/).
 1. Styled with [Basscss](http://www.basscss.com/) (more specifically, [Ace.css](https://basscss.com/ace/)), 
-   [Font Awesome Icons](http://fortawesome.github.io/Font-Awesome/icons/), and [Google Fonts](https://www.google.com/fonts).
+   [Font Awesome Icons](https://fontawesome.com/), and [Google Fonts](https://www.google.com/fonts).
+
 ## License
 
 This code is released under the MIT License. See LICENSE.txt.
