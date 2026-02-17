@@ -53,6 +53,10 @@ h2 {
   max-width: 400px;
 }
 
+.max-width-400-or-60vw {
+  max-width: min(400px, 60vw);
+}
+
 .shadow {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
