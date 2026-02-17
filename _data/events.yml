@@ -1,0 +1,25 @@
+- name: Axe throwing
+  image: event-1.jpg
+  link: "https://www.instagram.com/p/DTdnMyYiHPv/?hl=en&img_index=1"
+
+- name: Rugby match
+  image: event-2.jpg
+  link: "https://www.facebook.com/photo?fbid=122115113414532205&set=pb.61565966159394.-2207520000"
+
+- name: Padle
+  image: event-3.jpg
+  link: "https://www.facebook.com/photo.php?fbid=122160008834532205&set=pb.61565966159394.-2207520000&type=3"
+
+- name: VR gaming
+  image: event-4.jpg
+  link: "https://www.facebook.com/photo/?fbid=122169329540532205&set=pb.61565966159394.-2207520000"
+
+- name: BBQ
+  image: event-5.jpg
+  link: "https://www.instagram.com/p/DMpl6v5osuS/?hl=en"
+
+- name: Mini golf
+  image: event-6.jpg
+  link: "https://www.facebook.com/photo.php?fbid=122111147648532205&set=pb.61565966159394.-2207520000&type=3"
+
+

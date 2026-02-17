@@ -1,0 +1,62 @@
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.font-playfair {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+h1 {
+  font-size: 5.0rem;
+  line-height:1.02;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+.bg-dark-blue-gradient {
+  background: linear-gradient(150deg, #102550, #1e5ec6);
+}
+
+.bg-dark-blue {
+  background: #102550;
+}
+
+.bg-light-gray {
+  background: #f4f7fb;
+}
+
+.bg-dark-gold {
+  background: #d7a72d;
+}
+
+.bg-tan {
+  background: #f8f4ea;
+}
+
+.dark-blue {
+  color: #102550;
+}
+
+.light-blue {
+  color: #dce7ff;
+}
+
+.medium-blue {
+  color: #61708e;
+}
+
+.max-width-400 {
+  max-width: 400px;
+}
+
+.shadow {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.rounded {
+  border-radius: 8px;
+}

@@ -1,34 +1,19 @@
-<section class="py4" id="gallery" style="background:#f8f4ea;border-top:1px solid #e5dcc4;border-bottom:1px solid #e5dcc4;">
-  <div class="max-width-4 mx-auto px2" style="max-width:72rem;">
-    <h2 class="mt0 mb2" style="font-family:Georgia,serif;font-size:clamp(1.95rem,3.6vw,3.2rem);color:#102550;">Recent Events</h2>
-    <p class="mt0 mb3" style="font-size:1.25rem;color:#61708e;">Photos update automatically from our Instagram feed.</p>
-
-    {% assign posts = site.data.instagram_feed.posts | default: empty %}
-    {% if posts and posts.size > 0 %}
-      <div class="clearfix mxn1">
-        {% for post in posts %}
-          {% assign media_src = post.media_url %}
-          {% if post.media_type == "VIDEO" and post.thumbnail_url %}
-            {% assign media_src = post.thumbnail_url %}
-          {% endif %}
-
-          <div class="sm-col sm-col-6 lg-col lg-col-4 px1 mb2">
-            <figure class="m0 bg-white rounded border" style="border-color:#d8e1ef;overflow:hidden;">
-              <a class="block" href="{{ post.permalink }}" target="_blank" rel="noopener noreferrer">
-                <img class="block col-12" style="aspect-ratio:4/3;object-fit:cover;background:#dde9ff;" src="{{ media_src }}" alt="{{ post.caption | default: 'South Dublin Round Table event photo' | truncate: 90 }}">
-              </a>
-              <figcaption class="p2" style="font-size:.87rem;color:#61708e;line-height:1.45;">{{ post.caption | default: "View this event on Instagram" | truncate: 96 }}</figcaption>
-            </figure>
-          </div>
-        {% endfor %}
-      </div>
-    {% else %}
-      <div class="bg-white rounded border p3" style="border-color:#d8e1ef;">
-        <p class="m0" style="color:#61708e;line-height:1.55;">
-          Gallery is syncing. Visit our Instagram in the meantime:
-          <a href="{{ site.instagram_url }}" target="_blank" rel="noopener noreferrer">{{ site.instagram_url }}</a>
-        </p>
-      </div>
-    {% endif %}
+<section class="py4 bg-tan" id="events">
+  <div class="max-width-4 mx-auto p4">
+    <h2 class="mt0 mb2 dark-blue font-playfair">Recent Events</h2>
+    <p>
+      See the photos from all our events on <a href="{{ site.instagram_url }}" target="_blank">Instagram</a> and
+      <a href="{{ site.facebook_url }}" target="_blank">Facebook</a>.
+    </p>
+    <div class="clearfix mxn2">
+      {% for event in site.data.events %}
+        <div class="sm-col sm-col-4 px2">
+          <a href="{{ event.link }}" target="_blank" class="block bg-white rounded shadow text-decoration-none">
+            <img src="/assets/img/events/{{ event.image }}" alt="{{ event.name }}" class="fit">
+            <p class="mt0 center pb1 dark-blue">{{ event.name }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
