@@ -69,6 +69,10 @@ h2 {
   height: 220px;
 }
 
+.height-440 {
+  height: 440px;
+}
+
 .object-cover {
   object-fit: cover;
 }

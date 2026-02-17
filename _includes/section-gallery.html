@@ -5,11 +5,11 @@
       See the photos from all our events on <a href="{{ site.instagram_url }}" target="_blank">Instagram</a> and
       <a href="{{ site.facebook_url }}" target="_blank">Facebook</a>.
     </p>
-    <div class="clearfix mxn2">
+    <div class="flex flex-wrap mxn2">
       {% for event in site.data.events %}
-        <div class="sm-col sm-col-4 px2">
-          <a href="{{ event.link }}" target="_blank" class="block bg-white rounded shadow text-decoration-none">
-            <img src="/assets/img/events/{{ event.image }}" alt="{{ event.name }}" class="fit" loading="lazy">
+        <div class="sm-col sm-col-4 px2 flex mb2">
+          <a href="{{ event.link }}" target="_blank" class="flex flex-column height-full block bg-white rounded shadow text-decoration-none">
+            <img src="/assets/img/events/{{ event.image }}" alt="{{ event.name }}" class="fit height-440 object-cover block" loading="lazy">
             <p class="mt0 center pb1 dark-blue">{{ event.name }}</p>
           </a>
         </div>
