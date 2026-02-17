@@ -9,7 +9,7 @@
       {% for event in site.data.events %}
         <div class="sm-col sm-col-4 px2">
           <a href="{{ event.link }}" target="_blank" class="block bg-white rounded shadow text-decoration-none">
-            <img src="/assets/img/events/{{ event.image }}" alt="{{ event.name }}" class="fit">
+            <img src="/assets/img/events/{{ event.image }}" alt="{{ event.name }}" class="fit" loading="lazy">
             <p class="mt0 center pb1 dark-blue">{{ event.name }}</p>
           </a>
         </div>
