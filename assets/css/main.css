@@ -59,6 +59,10 @@ h2 {
   color: #61708e;
 }
 
+.max-width-900 {
+  max-width: 900px;
+}
+
 .max-width-400 {
   max-width: 400px;
 }
